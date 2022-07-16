@@ -5,8 +5,12 @@
   "author": "Lucas Souza",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "start": "ts-node-dev ./src/index.ts"
+  },
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "http-status-codes": "^2.2.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
