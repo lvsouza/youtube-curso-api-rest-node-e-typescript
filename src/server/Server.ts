@@ -4,7 +4,7 @@ import express from 'express';
 const server = express();
 
 
-server.get('/', (_, res) => {
+server.delete('/teste', (_, res) => {
   return res.send('Olá, DEV!');
 });
 
