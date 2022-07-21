@@ -13,12 +13,7 @@ router.get('/', (_, res) => {
   return res.send('Olá, DEV!');
 });
 
-router.post(
-  '/cidades',
-  CidadesController.createBodyValidator,
-  CidadesController.createQueryValidator,
-  CidadesController.create
-);
+router.post('/cidades', CidadesController.createValidation, CidadesController.create);
 
 
 
