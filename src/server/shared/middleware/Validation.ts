@@ -3,7 +3,6 @@ import { StatusCodes } from 'http-status-codes';
 import { SchemaOf, ValidationError } from 'yup';
 
 
-
 type TProperty = 'body' | 'header' | 'params' | 'query';
 
 type TGetSchema = <T>(schema: SchemaOf<T>) => SchemaOf<T>
@@ -13,7 +12,6 @@ type TAllSchemas = Record<TProperty, SchemaOf<any>>;
 type TGetAllSchemas = (getSchema: TGetSchema) => Partial<TAllSchemas>;
 
 type TValidation = (getAllSchemas: TGetAllSchemas) => RequestHandler;
-
 
 export const validation: TValidation = (getAllSchemas) => async (req, res, next) => {
   const schemas = getAllSchemas((schema) => schema);
