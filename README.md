@@ -2,8 +2,6 @@
   <img src="./docs/Capa do curso.png" width="400" />
 </p>
 
----
-
 Este projeto é uma API Rest em NodeJS e Typescript desenvolvida para fins de aprendizado no curso de **[API Rest em NodeJS e Typescript](https://youtu.be/SVepTuBK4V0)** do canal **[Lucas Souza Dev](https://www.youtube.com/c/LucasSouzaDev)** no YouTube. 
 
 
